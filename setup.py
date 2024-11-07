@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="crawler",  # Use 'crawler' as the package name
@@ -9,7 +9,7 @@ setup(
     author="Muhammad Sohaib Hassan",
     author_email="muhammadsohaibhassan3@gmail.com",
     url="https://github.com/MuhammadSohaibHassan/crawler",  # Your GitHub repo URL
-    packages=find_packages(),  # Automatically find packages (optional)
+    py_modules=["crawler"],  # For single-file packages
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",  # Choose a license (e.g., MIT)
@@ -18,7 +18,7 @@ setup(
     python_requires=">=3.6",
     entry_points={
         "console_scripts": [
-            "crawler=crawler:main",  # Ensure 'crawler' is the command
+            "crawler=crawler:main",  # This assumes 'main()' is defined in your crawler.py
         ],
     },
 )
