@@ -1,4 +1,4 @@
-# File Finder Tool
+# Crawler
 
 A simple and enhanced command-line tool to search for files on your local system based on various criteria such as filename, extension, size, and more. This tool allows users to filter files, view their details (like size and path), and sort the results by different attributes.
 
@@ -13,7 +13,7 @@ A simple and enhanced command-line tool to search for files on your local system
 - **Display File Details**: Option to display file size and path along with the filename.
   
 ## Installation
-To use the file finder tool, follow these steps:
+To use the crawler, follow these steps:
 
 ### Requirements:
 - Python 3.x (Tested on version 3.8+)
@@ -33,9 +33,9 @@ To use the file finder tool, follow these steps:
       ```
 
 3. **Running the Finder:**
-    - After installation, you can run the `finder.py` script using the following command:
+    - After installation, you can run the `crawler.py` script using the following command:
       ```bash
-      python finder.py [OPTIONS]
+      python crawler.py [OPTIONS]
       ```
 
     - Replace `[OPTIONS]` with the desired arguments as described below.
@@ -61,6 +61,6 @@ To use the file finder tool, follow these steps:
 
 - **Search for files with a specific name**:
   ```bash
-  python finder.py "example" --target-dir /path/to/search --sort size
+  python crawler.py "example" --target-dir /path/to/search --sort size
 
   
