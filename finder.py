@@ -90,8 +90,8 @@ def display_results(results, show_size, show_path):
             output += f"{Fore.YELLOW}, Path: {file_info['path']}"
         print(output)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Enhanced command-line file finder.")
+def main():
+    parser = argparse.ArgumentParser(description="Enhanced command-line file crawler.")
     parser.add_argument("filename", help="Filename to search for (partial match allowed).")
     parser.add_argument("file_extension", nargs="?", default="", help="Optional file extension to search for (partial match allowed).")
     parser.add_argument("-ef", "--exact-filename", action="store_true", help="Match filename exactly (ignores extension).")
@@ -123,3 +123,6 @@ if __name__ == "__main__":
     )
 
     display_results(results, args.show_size, args.show_path)
+
+if __name__ == "__main__":
+    main()
