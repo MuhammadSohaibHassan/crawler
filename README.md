@@ -22,7 +22,7 @@ To use the file finder tool, follow these steps:
 1. **Download or Clone the Repository:**
     - You can clone the repository using Git:
       ```
-      git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+      git clone https://github.com/MuhammadSohaibHassan/crawler.git
       ```
     - Alternatively, you can manually download the files as `.zip` from the GitHub interface.
 
